@@ -1,0 +1,28 @@
+{
+    "id": "D8939280",
+    "path": null,
+    "project_path": null,
+    "type": "object_explorer",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1631765680365.0,
+    "source_on_save": false,
+    "relative_order": 5,
+    "properties": {
+        "id": "4dc67d4bf79d4dc1b2ba6709d6e1ee9d",
+        "name": "violations",
+        "title": "violations",
+        "language": "R",
+        "source_window_id": "",
+        "Source": "Source"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 3904679371065156713,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1631765680365,
+    "read_only": false,
+    "read_only_alternatives": []
+}

@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1630496741292.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1021207065",
+    "id" : "20C50192",
+    "lastKnownWriteTime" : 1630504020,
+    "last_content_update" : 1630504020587,
+    "path" : "C:/Users/Muhammad/ISYE/ISYE HW1/hw2.R",
+    "project_path" : "hw2.R",
+    "properties" : {
+        "cursorPosition" : "4,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

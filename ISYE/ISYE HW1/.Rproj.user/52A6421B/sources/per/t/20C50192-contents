@@ -1,0 +1,21 @@
+
+#Question2.2
+library(kernlab)
+library(kknn)
+
+
+setwd("C:/Users/Muhammad/ISYE")
+
+data<-read.table("credit_card_data-headers.txt", header = TRUE)
+
+#ksvm model
+model <- ksvm(as.matrix(data[,1:10]),as.factor(data[,11]), C=100, scaled =TRUE, kernel="vanilladot", type = "C-svc")
+
+#coeeficients
+a <- colSums(model@xmatrix[[1]] * model@coef[[1]])
+#intercept
+a0<- model@b
+#predict
+pred<- predict(model,data[,1:10])
+accuracy_of_predict <- sum(pred==data[,11])/nrow(data)
+#Model Accuracy is 86.39%

@@ -1,0 +1,25 @@
+library(tidyverse)
+library(stats)
+library(smooth)
+
+
+
+setwd("C:/Users/Muhammad/ISYE/Hw5")
+
+temp_data<- read.table("temps.txt", header = TRUE)
+names(temp_data) = gsub(pattern = "X", replacement = "", x = names(temp_data))
+temp_data <- data.frame(unlist(temp_data[,2:21]))
+ts_temp= ts(temp_data, frequency = 123, start=1996)
+summary(ts_temp)
+ts.plot(ts_temp)
+
+Model_HW_Mult<-HoltWinters(ts_temp, alpha=NULL, beta= NULL, gamma=NULL, seasonal="multiplicative")
+summary(Model_HW_Mult)
+plot(Model_HW_Mult)
+
+Model_HW_ADD<-HoltWinters(ts_temp, alpha=NULL, beta= NULL, gamma=NULL, seasonal="additive")
+summary(Model_HW_ADD)
+plot(Model_HW_ADD)
+
+
+
